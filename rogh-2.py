@@ -1,4 +1,18 @@
-<!DOCTYPE html>
+#Loop from 2 to 19 and create the HTML files
+import os
+
+base_path = os.path.dirname(os.path.abspath(__file__))  # Get the current script's directory
+output_directory = os.path.join(base_path, 'boards', 'cbse', 'Rdsharma', 'class_11_solution')  # Specify the output directory
+
+
+for chapter_no in range(1, 34):
+    file_name = f"chapter_{chapter_no}_solution.html"
+    file_path = os.path.join(output_directory, file_name)
+
+    # Create the HTML file with your embedded HTML code
+    with open(file_path, 'w') as html_file:
+        html_code = '''
+        <!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -259,3 +273,7 @@
 </body>
 
 </html>
+        '''
+        html_file.write(html_code)
+
+    print(f"Created {file_name} in {output_directory}")
