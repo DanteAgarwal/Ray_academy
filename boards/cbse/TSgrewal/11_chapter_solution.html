@@ -1,23 +1,9 @@
-#Loop from 2 to 19 and create the HTML files
-import os
-
-base_path = os.path.dirname(os.path.abspath(__file__))  # Get the current script's directory
-output_directory = os.path.join(base_path, 'boards', 'cbse', 'Rdsharma','class_9_solution')  # Specify the output directory
-
-
-for chapter_no in range(1, 26):
-    file_name = f"chapter_{chapter_no}_solution.html"
-    file_path = os.path.join(output_directory, file_name)
-
-    # Create the HTML file with your embedded HTML code
-    with open(file_path, 'w') as html_file:
-        html_code = '''
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <title>chapter-33 solution</title>
+    <title>TS Grewal class 11 Chapter Solutions</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
@@ -110,11 +96,11 @@ for chapter_no in range(1, 26):
     <div class="container-fluid page-header " style="margin-bottom: 90px;">
         <div class="container">
             <div class="d-flex flex-column justify-content-center" style="min-height: 300px">
-                <h3 class="display-4 text-white text-uppercase">Binomial Distribution</h3>
+                <h2 class=" text-white text-uppercase">TS Grewal class 11 Chapters Solution</h2>
                 <div class="d-inline-flex text-white" style="font-size: 25px; font-weight: bold;">
-                    <p class="m-0 text-uppercase"><a style="color: #F4C430" href="">Home</a></p>
+                    <p class="m-0 text-uppercase"><a style="color: #F4C430" href="../../../index.html">Home</a></p>
                     <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0">Class 9th</p>
+                    <p class="m-0"><a href="../class-11/course11.html">Class 12th</a></p>
                 </div>
             </div>
         </div>
@@ -122,12 +108,42 @@ for chapter_no in range(1, 26):
     <!-- Header End -->
 
     <!-- Main content-->
+    <div class="container" style="padding-bottom:30px">
+        <h3>Choose the chapter</h3>
+    </div>
+    <div class="container mb-5" style="width: 500px;">
+
+        <div class="dropdown">
+            <select id="chapterDropdown" class="form-control" style="border: 2px solid #032dfff1;
+            font: normal 400 20px/25px 'Open Sans', sans-serif;">
+                <option value="chapter1">Chapter 1 - Basic Accounting Terms</option>
+                <option value="chapter2">Chapter 2 - Accounting Equation</option>
+                <option value="chapter3">Chapter 3 - Accounting Procedures Rules Of Debit And Credit</option>
+                <option value="chapter4">Chapter 4 - Origin Of Transactions Source Documents And Preparation Of Vouchers
+                </option>
+                <option value="chapter5">Chapter 5 - Journal</option>
+                <option value="chapter6">Chapter 6 - Ledger</option>
+                <option value="chapter7">Chapter 7 - Special Purpose Books I Cash Book</option>
+                <option value="chapter8">Chapter 8 - Special Purpose Books Ii Other Books</option>
+                <option value="chapter9">Chapter 9 - Bank Reconciliation Statement</option>
+                <option value="chapter10">Chapter 10 - Trial Balance</option>
+                <option value="chapter11">Chapter 11 - Depreciation</option>
+                <option value="chapter12">Chapter 12 - Accounting For Bills Of Exchange</option>
+                <option value="chapter13">Chapter 13 - Rectification Of Errors</option>
+                <option value="chapter14">Chapter 14 - Financial Statements Of Sole Proprietorship</option>
+                <option value="chapter15">Chapter 15 - Adjustments In Preparation Of Financial Statements</option>
+                <option value="chapter16">Chapter 16 - Accounts From Incomplete Records Single Entry System</option>
+
+                <!-- Add more chapter options as needed -->
+            </select>
+        </div>
+    </div>
+
     <section class="bg-gray pad30">
         <div class="max-container">
-            <h1 class="section-title" style="font-weight:  bold; font-size:x-large ;padding-top:40px;">Class 9
-                RD Sharma
-                Maths
-                Chapter 33 - Binomial Distribution</h1>
+            <h1 class="section-title" style="font-weight:  bold; font-size:x-large ;padding-top:40px;">Class 12
+                TS Grewal class 11
+                Chapter solution </h1>
             <hr style="
             height: 10px; /* Set the desired height for the line */
             background-color: #eb7134; /* Set the line color */
@@ -244,36 +260,120 @@ for chapter_no in range(1, 26):
             e.preventDefault();
         });
 
-        // Function to generate image elements based on folder path and number of images
-        function generateImages(folderPath, numImages) {
+        // Define chapter data including folder path and number of images
+        const chapterData = {
+            chapter1: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 1 - Basic Accounting Terms',
+                numImages: 2,
+            },
+            chapter2: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 2 - Accounting Equation',
+                numImages: 28,
+            },
+            chapter3: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 3 - Accounting Procedures Rules Of Debit And Credit',
+                numImages: 10,
+            },
+            chapter4: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 4 - Origin Of Transactions Source Documents And Preparation Of Vouchers',
+                numImages: 18,
+            },
+            chapter5: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 5 - Journal',
+                numImages: 31,
+            },
+            chapter6: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 6 - Ledger',
+                numImages: 79,
+            },
+            chapter7: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 7 - Special Purpose Books I Cash Book',
+                numImages: 21,
+            },
+            chapter8: {
+                folderPath: 'img/CLASS 11/Ts Grewal 2019 11/Chapter 8 - Special Purpose Books Ii Other Books',
+                numImages: 64,
+            },
+            chapter9: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 9 - Bank Reconciliation Statement',
+                numImages: 32,
+            },
+            chapter10: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 10 - Trial Balance',
+                numImages: 19,
+            },
+            chapter11: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 11 - Depreciation',
+                numImages: 32,
+            },
+            chapter12: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 12 - Accounting For Bills Of Exchange',
+                numImages: 74,
+            },
+            chapter13: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 13 - Rectification Of Errors',
+                numImages: 67,
+            },
+            chapter14: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 14 - Financial Statements Of Sole Proprietorship',
+                numImages: 24,
+            },
+            chapter15: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 15 - Adjustments In Preparation Of Financial Statements',
+                numImages: 34,
+            },
+            chapter16: {
+                folderPath: '/img/CLASS 11/Ts Grewal 2019 11/Chapter 16 - Accounts From Incomplete Records Single Entry System',
+                numImages: 41,
+            },
+
+            // Add more chapters and data as needed
+        };
+
+        // Function to generate images based on the selected chapter
+        function generateImagesForChapter(chapter) {
             const imageContainer = document.getElementById('image-container');
-            for (let i = 1; i <= numImages; i++) {
-                const img = document.createElement('img');
-                img.src = `${folderPath}/${i.toString().padStart(4, '0')}.jpg`;
-                img.alt = `Embedded Image`;
-                img.style.display = 'block';
-                img.style.objectFit = 'cover';
-                img.style.transition = 'transform 0.3s ease-in-out';
-                img.style.width = '100%';
-                img.style.height = 'auto';
+            imageContainer.innerHTML = ''; // Clear previous images
 
-                // Create a parent paragraph element
-                const p = document.createElement('p');
-                p.appendChild(img);
+            const chapterInfo = chapterData[chapter];
 
-                // Append the paragraph to the image container
-                imageContainer.appendChild(p);
+            if (chapterInfo) {
+                const folderPath = chapterInfo.folderPath;
+                const numImages = chapterInfo.numImages;
+
+                // Load images for the selected chapter
+                for (let i = 1; i <= numImages; i++) {
+                    const img = document.createElement('img');
+                    img.src = `${folderPath}/${i.toString().padStart(4, '0')}.jpg`;
+                    img.alt = `Chapter ${chapter} Image ${i}`;
+                    img.style.display = 'block';
+                    img.style.objectFit = 'cover';
+                    img.style.transition = 'transform 0.3s ease-in-out';
+                    img.style.width = '100%';
+                    img.style.height = 'auto';
+
+                    const p = document.createElement('p');
+                    p.appendChild(img);
+
+                    imageContainer.appendChild(p);
+                }
+            } else {
+                // Handle the case where the chapter is not found
+                alert('Chapter not found');
             }
         }
 
-        // Call the generateImages function with your folder path and the number of images in the folder
-        generateImages('/img/RD_sharma_solution/RD_SHARMA_12_MATH_2019/RD SHARMA 12 MATH 2019/PART-1/Rd Sharma 12 Vol 1 2019 Solutions for Class 12 Science MATH Chapter 1 - Relation-images', 49);
+        // Add an event listener to the dropdown to trigger image loading
+        const chapterDropdown = document.getElementById('chapterDropdown');
+        chapterDropdown.addEventListener('change', function () {
+            const selectedChapter = chapterDropdown.value;
+            generateImagesForChapter(selectedChapter);
+        });
+
+        // Load images for the initial selected chapter (optional)
+        generateImagesForChapter(chapterDropdown.value);
     </script>
 
 </body>
 
 </html>
-        '''
-        html_file.write(html_code)
-
-    print(f"Created {file_name} in {output_directory}")
