@@ -18,10 +18,22 @@
 
     <!-- Libraries Stylesheet -->
     <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.css">
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="/css/style.css" rel="stylesheet">
     <style>
+        #owl-demo .item {
+            background: #42bdc2;
+            padding: 30px 0px;
+            margin: 10px;
+            color: #FFF;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            text-align: center;
+        }
+
         .noFlex .verticle-card {
             text-decoration: none;
             display: -webkit-box;
@@ -254,68 +266,65 @@
     </div>
     <!-- Header End -->
 
+
+
     <div class="jeeMainInner jeeMaxWidth group ng-scope" ng-controller="SessionController">
         <main id="mainContent" class="mainContent hideSidebar" style="min-height: 568px;">
             <div id="allsession" class="allsession">
 
-                <article>
-                    <div class="page-article_content" itemprop="description">
-                        <ul class="newChapterList" id="main__content">
-                            <li class="chapter noFlex">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="mb-3">Relations and Functions </h3>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
-                                            role="button" data-slide="prev">
-                                            <i class="fa fa-arrow-left"></i>
-                                        </a>
-                                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2"
-                                            role="button" data-slide="next">
-                                            <i class="fa fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <div id="carouselExampleIndicators2" class="carousel slide"
-                                            data-ride="carousel">
+                <div class="page-article_content" itemprop="description">
+                    <ul class="newChapterList" id="main__content">
+                        <li class="chapter noFlex">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="mb-3">Relations and Functions </h3>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
+                                        role="button" data-slide="prev">
+                                        <i class="fa fa-arrow-left"></i>
+                                    </a>
+                                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
+                                        data-slide="next">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
 
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-lg-6 col mb-4">
-                                                                <div class="rounded overflow-hidden mb-2">
-                                                                    <div class="warpper"><iframe width="520"
-                                                                            height="315"
-                                                                            src="https://www.youtube.com/embed/-OfaWTYWCu4?si=PfV5-I2aeYnegwWm"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                            allowfullscreen></iframe></div>
-                                                                    <div class="bg-secondary px-md-2">
-                                                                        <a class="h5" href="">Web design & development
-                                                                            courses for beginner</a>
-                                                                        <div class="border-top mt-4 pt-4">
-                                                                            <div class="d-flex justify-content-between">
-                                                                            </div>
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col sm-6">
+                                                            <div class="rounded overflow-hidden mb-2">
+                                                                <div class="warpper"><iframe width="520" height="315"
+                                                                        src="https://www.youtube.com/embed/-OfaWTYWCu4?si=PfV5-I2aeYnegwWm"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                        allowfullscreen></iframe></div>
+                                                                <div class="bg-secondary px-md-2">
+                                                                    <a class="h5" href="">Web design & development
+                                                                        courses for beginner</a>
+                                                                    <div class="border-top mt-4 pt-4">
+                                                                        <div class="d-flex justify-content-between">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-6 col mb-4">
-                                                                <div class="rounded overflow-hidden mb-2">
-                                                                    <div class="warpper"><iframe width="520"
-                                                                            height="315"
-                                                                            src="https://www.youtube.com/embed/-43RAjQrBnU?si=OUqtcOCSh5Qml99P"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                            allowfullscreen></iframe></div>
-                                                                    <div class="bg-secondary px-md-2">
-                                                                        <a class="h5" href="">Web design & development
-                                                                            courses for beginner</a>
-                                                                        <div class="border-top mt-4 pt-4">
-                                                                            <div class="d-flex justify-content-between">
-                                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-6 col sm-6">
+                                                            <div class="rounded overflow-hidden mb-2">
+                                                                <div class="warpper"><iframe width="520" height="315"
+                                                                        src="https://www.youtube.com/embed/-43RAjQrBnU?si=OUqtcOCSh5Qml99P"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                        allowfullscreen></iframe></div>
+                                                                <div class="bg-secondary px-md-2">
+                                                                    <a class="h5" href="">Web design & development
+                                                                        courses for beginner</a>
+                                                                    <div class="border-top mt-4 pt-4">
+                                                                        <div class="d-flex justify-content-between">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -323,41 +332,39 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item active carousel-item-left">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-lg-6 col mb-4">
-                                                                <div class="rounded overflow-hidden mb-2">
-                                                                    <div class="warpper"><iframe width="520"
-                                                                            height="315"
-                                                                            src="https://www.youtube.com/embed/-OfaWTYWCu4?si=PfV5-I2aeYnegwWm"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                            allowfullscreen></iframe></div>
-                                                                    <div class="bg-secondary px-md-2">
-                                                                        <a class="h5" href="">Web design & development
-                                                                            courses for beginner</a>
-                                                                        <div class="border-top mt-4 pt-4">
-                                                                            <div class="d-flex justify-content-between">
-                                                                            </div>
+                                            </div>
+                                            <div class="carousel-item active carousel-item-left">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col mb-4">
+                                                            <div class="rounded overflow-hidden mb-2">
+                                                                <div class="warpper"><iframe width="520" height="315"
+                                                                        src="https://www.youtube.com/embed/-OfaWTYWCu4?si=PfV5-I2aeYnegwWm"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                        allowfullscreen></iframe></div>
+                                                                <div class="bg-secondary px-md-2">
+                                                                    <a class="h5" href="">Web design & development
+                                                                        courses for beginner</a>
+                                                                    <div class="border-top mt-4 pt-4">
+                                                                        <div class="d-flex justify-content-between">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-6 col mb-4">
-                                                                <div class="rounded overflow-hidden mb-2">
-                                                                    <div class="warpper"><iframe width="520"
-                                                                            height="315"
-                                                                            src="https://www.youtube.com/embed/-43RAjQrBnU?si=OUqtcOCSh5Qml99P"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                            allowfullscreen></iframe></div>
-                                                                    <div class="bg-secondary px-md-2">
-                                                                        <a class="h5" href="">Web design & development
-                                                                            courses for beginner</a>
-                                                                        <div class="border-top mt-4 pt-4">
-                                                                            <div class="d-flex justify-content-between">
-                                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col mb-4">
+                                                            <div class="rounded overflow-hidden mb-2">
+                                                                <div class="warpper"><iframe width="520" height="315"
+                                                                        src="https://www.youtube.com/embed/-43RAjQrBnU?si=OUqtcOCSh5Qml99P"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                        allowfullscreen></iframe></div>
+                                                                <div class="bg-secondary px-md-2">
+                                                                    <a class="h5" href="">Web design & development
+                                                                        courses for beginner</a>
+                                                                    <div class="border-top mt-4 pt-4">
+                                                                        <div class="d-flex justify-content-between">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -365,41 +372,39 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item carousel-item-next carousel-item-left">
-                                                    <div class="container">
-                                                        <div class="row">
-                                                            <div class="col-lg-6 col mb-4">
-                                                                <div class="rounded overflow-hidden mb-2">
-                                                                    <div class="warpper"><iframe width="520"
-                                                                            height="315"
-                                                                            src="https://www.youtube.com/embed/-OfaWTYWCu4?si=PfV5-I2aeYnegwWm"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                            allowfullscreen></iframe></div>
-                                                                    <div class="bg-secondary px-md-2">
-                                                                        <a class="h5" href="">Web design & development
-                                                                            courses for beginner</a>
-                                                                        <div class="border-top mt-4 pt-4">
-                                                                            <div class="d-flex justify-content-between">
-                                                                            </div>
+                                            </div>
+                                            <div class="carousel-item carousel-item-next carousel-item-left">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-lg-6 col mb-4">
+                                                            <div class="rounded overflow-hidden mb-2">
+                                                                <div class="warpper"><iframe width="520" height="315"
+                                                                        src="https://www.youtube.com/embed/-OfaWTYWCu4?si=PfV5-I2aeYnegwWm"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                        allowfullscreen></iframe></div>
+                                                                <div class="bg-secondary px-md-2">
+                                                                    <a class="h5" href="">Web design & development
+                                                                        courses for beginner</a>
+                                                                    <div class="border-top mt-4 pt-4">
+                                                                        <div class="d-flex justify-content-between">
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-lg-6 col mb-4">
-                                                                <div class="rounded overflow-hidden mb-2">
-                                                                    <div class="warpper"><iframe width="520"
-                                                                            height="315"
-                                                                            src="https://www.youtube.com/embed/-43RAjQrBnU?si=OUqtcOCSh5Qml99P"
-                                                                            title="YouTube video player" frameborder="0"
-                                                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                            allowfullscreen></iframe></div>
-                                                                    <div class="bg-secondary px-md-2">
-                                                                        <a class="h5" href="">Web design & development
-                                                                            courses for beginner</a>
-                                                                        <div class="border-top mt-4 pt-4">
-                                                                            <div class="d-flex justify-content-between">
-                                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col mb-4">
+                                                            <div class="rounded overflow-hidden mb-2">
+                                                                <div class="warpper"><iframe width="520" height="315"
+                                                                        src="https://www.youtube.com/embed/-43RAjQrBnU?si=OUqtcOCSh5Qml99P"
+                                                                        title="YouTube video player" frameborder="0"
+                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                        allowfullscreen></iframe></div>
+                                                                <div class="bg-secondary px-md-2">
+                                                                    <a class="h5" href="">Web design & development
+                                                                        courses for beginner</a>
+                                                                    <div class="border-top mt-4 pt-4">
+                                                                        <div class="d-flex justify-content-between">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -411,570 +416,334 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="chapter noFlex">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="mb-3">Set Theory</h3>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
-                                            role="button" data-slide="prev">
-                                            <i class="fa fa-arrow-left"></i>
-                                        </a>
-                                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2"
-                                            role="button" data-slide="next">
-                                            <i class="fa fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <div id="carouselExampleIndicators2" class="carousel slide"
-                                            data-ride="carousel">
+                            </div>
+                        </li>
 
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <div class="warpper"><iframe
-                                                                        src="https://www.youtube.com/embed/Z9Onb_z0XPI?si=5DwhfKLPbl1CMsQJ?controls=0"
-                                                                        title="YouTube video player" frameborder="0"
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                        allowfullscreen></iframe></div>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <div class="warpper"><iframe
-                                                                        src="https://www.youtube.com/embed/HwPBEgY79Xw?si=Fr30qGcK6juTo8sR?controls=0"
-                                                                        title="YouTube video player" frameborder="0"
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                                                                </div>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <div class="warpper"><iframe
-                                                                        src="https://www.youtube.com/embed/7JEjQG4-tpU?si=KBs3tkFrtz-2rjUu?controls=0"
-                                                                        title="YouTube video player" frameborder="0"
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                        allowfullscreen></iframe></div>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item active carousel-item-left">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <iframe
-                                                                    src="https://www.youtube.com/embed/bWAVOlfUpx4?si=XqLgIOQwSrsjxALL?controls=0"
+
+
+
+
+                        <li class="chapter noFlex">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="mb-3">Set Theory</h3>
+                                    <div id="owl-demo" class="owl-carousel owl-theme">
+
+                                        <div class="item">
+                                            <h1>1</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>2</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>3</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>4</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>5</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>6</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>7</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>8</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>9</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>10</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>11</h1>
+                                        </div>
+                                        <div class="item">
+                                            <h1>12</h1>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                        </li>
+                        <li class="chapter noFlex">
+                            <div class="row">
+                                <div class="col-6">
+                                    <h3 class="mb-3">Calculus </h3>
+                                </div>
+                                <div class="col-6 text-right">
+                                    <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
+                                        role="button" data-slide="prev">
+                                        <i class="fa fa-arrow-left"></i>
+                                    </a>
+                                    <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button"
+                                        data-slide="next">
+                                        <i class="fa fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                                <div class="col-12">
+                                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <div class="warpper"><iframe
+                                                                    src="https://www.youtube.com/embed/Z9Onb_z0XPI?si=5DwhfKLPbl1CMsQJ?controls=0"
                                                                     title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share "
-                                                                    autofullscreen></iframe>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    allowfullscreen></iframe></div>
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-2.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-3.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                                <div class="carousel-item carousel-item-next carousel-item-left">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-1.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-2.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-3.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="chapter noFlex">
-                                <div class="row">
-                                    <div class="col-6">
-                                        <h3 class="mb-3">Calculus </h3>
-                                    </div>
-                                    <div class="col-6 text-right">
-                                        <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2"
-                                            role="button" data-slide="prev">
-                                            <i class="fa fa-arrow-left"></i>
-                                        </a>
-                                        <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2"
-                                            role="button" data-slide="next">
-                                            <i class="fa fa-arrow-right"></i>
-                                        </a>
-                                    </div>
-                                    <div class="col-12">
-                                        <div id="carouselExampleIndicators2" class="carousel slide"
-                                            data-ride="carousel">
-
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <div class="warpper"><iframe
-                                                                        src="https://www.youtube.com/embed/Z9Onb_z0XPI?si=5DwhfKLPbl1CMsQJ?controls=0"
-                                                                        title="YouTube video player" frameborder="0"
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                        allowfullscreen></iframe></div>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <div class="warpper"><iframe
-                                                                        src="https://www.youtube.com/embed/HwPBEgY79Xw?si=Fr30qGcK6juTo8sR?controls=0"
-                                                                        title="YouTube video player" frameborder="0"
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
-                                                                </div>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <div class="warpper"><iframe
-                                                                        src="https://www.youtube.com/embed/7JEjQG4-tpU?si=KBs3tkFrtz-2rjUu?controls=0"
-                                                                        title="YouTube video player" frameborder="0"
-                                                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                                                        allowfullscreen></iframe></div>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="carousel-item active carousel-item-left">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <iframe
-                                                                    src="https://www.youtube.com/embed/bWAVOlfUpx4?si=XqLgIOQwSrsjxALL?controls=0"
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <div class="warpper"><iframe
+                                                                    src="https://www.youtube.com/embed/HwPBEgY79Xw?si=Fr30qGcK6juTo8sR?controls=0"
                                                                     title="YouTube video player" frameborder="0"
-                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share "
-                                                                    autofullscreen></iframe>
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                                                            </div>
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-2.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
-                                                                    </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <div class="warpper"><iframe
+                                                                    src="https://www.youtube.com/embed/7JEjQG4-tpU?si=KBs3tkFrtz-2rjUu?controls=0"
+                                                                    title="YouTube video player" frameborder="0"
+                                                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                                    allowfullscreen></iframe></div>
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-3.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="carousel-item carousel-item-next carousel-item-left">
-                                                    <div class="row">
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-1.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
+                                            </div>
+                                            <div class="carousel-item active carousel-item-left">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <iframe
+                                                                src="https://www.youtube.com/embed/bWAVOlfUpx4?si=XqLgIOQwSrsjxALL?controls=0"
+                                                                title="YouTube video player" frameborder="0"
+                                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share "
+                                                                autofullscreen></iframe>
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-2.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
-                                                                    </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 col-md-6 mb-4">
-                                                            <div class="rounded overflow-hidden mb-2">
-                                                                <img class="img-fluid" src="img/course-3.jpg" alt="">
-                                                                <div class="bg-secondary p-4">
-                                                                    <div class="d-flex justify-content-between mb-3">
-                                                                        <small class="m-0"><i
-                                                                                class="fa fa-users text-primary mr-2"></i>25
-                                                                            Students</small>
-                                                                        <small class="m-0"><i
-                                                                                class="far fa-clock text-primary mr-2"></i>01h
-                                                                            30m</small>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
-                                                                    <a class="h5" href="">Web design & development
-                                                                        courses for beginner</a>
-                                                                    <div class="border-top mt-4 pt-4">
-                                                                        <div class="d-flex justify-content-between">
-                                                                            <h6 class="m-0"><i
-                                                                                    class="fa fa-star text-primary mr-2"></i>4.5
-                                                                                <small>(250)</small>
-                                                                            </h6>
-                                                                            <h5 class="m-0">$99</h5>
-                                                                        </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="carousel-item carousel-item-next carousel-item-left">
+                                                <div class="row">
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <img class="img-fluid" src="img/course-1.jpg" alt="">
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <img class="img-fluid" src="img/course-2.jpg" alt="">
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-4 col-md-6 mb-4">
+                                                        <div class="rounded overflow-hidden mb-2">
+                                                            <img class="img-fluid" src="img/course-3.jpg" alt="">
+                                                            <div class="bg-secondary p-4">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <small class="m-0"><i
+                                                                            class="fa fa-users text-primary mr-2"></i>25
+                                                                        Students</small>
+                                                                    <small class="m-0"><i
+                                                                            class="far fa-clock text-primary mr-2"></i>01h
+                                                                        30m</small>
+                                                                </div>
+                                                                <a class="h5" href="">Web design & development
+                                                                    courses for beginner</a>
+                                                                <div class="border-top mt-4 pt-4">
+                                                                    <div class="d-flex justify-content-between">
+                                                                        <h6 class="m-0"><i
+                                                                                class="fa fa-star text-primary mr-2"></i>4.5
+                                                                            <small>(250)</small>
+                                                                        </h6>
+                                                                        <h5 class="m-0">$99</h5>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -985,12 +754,11 @@
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                        </ul>
-                    </div>
-                </article>
+                            </div>
+                        </li>
+                    </ul>
 
-            </div>
+                </div>
         </main>
     </div>
 
@@ -1088,6 +856,15 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $("#owl-demo").owlCarousel({
+                navigation: true
+            });
+
+        });
+    </script>
 
 
 </body>
