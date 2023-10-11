@@ -16,22 +16,17 @@
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-    <!-- Libraries Stylesheet -->
-    <link href="/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/lib/owlcarousel/assets/owl.carousel.css">
-
     <!-- Customized Bootstrap Stylesheet -->
     <link href="/css/style.css" rel="stylesheet">
+
     <!-- Include Owl Carousel CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="lib/owlcarousel/assets/owl.theme.default.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Include your custom CSS -->
     <style>
         #owl-demo .item {
-            background: #42bec2ac;
             margin: 15px;
             display: flex;
         }
@@ -234,9 +229,45 @@
         </div>
     </div>
     <!-- Header End -->
+    <div class="container" style="padding-bottom:30px">
+        <h3 class="header">Chapter Videos</h3>
+        <div class="container mb-5" style="width: 500px;">
+            <select id="chapterDropdown" style="border: 2px solid #032dfff1;
+            font: normal 400 20px/25px 'Open Sans', sans-serif;">
+                <option value="Chapter 1 - Electric Charges and Fields">Chapter 1 - Electric Charges and Fields</option>
+                <option value="Chapter 2 - Electrostatic Potential and Capacitance">Chapter 2 - Electrostatic Potential
+                    and
+                    Capacitance</option>
+                <option value="Chapter 3 - Current Electricity">Chapter 3 - Current Electricity</option>
+                <option value="Chapter 4 - Moving Charges and Magnetism">Chapter 4 - Moving Charges and Magnetism
+                </option>
+                <option value="Chapter 5 - Magnetism and Matter">Chapter 5 - Magnetism and Matter</option>
+                <option value="Chapter 6 - Electromagnetic Induction">Chapter 6 - Electromagnetic Induction</option>
+                <option value="Chapter 7 - Alternating Current">Chapter 7 - Alternating Current</option>
+                <option value="Chapter 8 - Electromagnetic Waves">Chapter 8 - Electromagnetic Waves</option>
+                <option value="Chapter 9 - Ray Optics and Optical Instruments">Chapter 9 - Ray Optics and Optical
+                    Instruments</option>
+                <option value="Chapter 10 - Wave Optics">Chapter 10 - Wave Optics</option>
+                <option value="Chapter 11 - Dual Nature of Radiation and Matter">Chapter 11 - Dual Nature of Radiation
+                    and
+                    Matter</option>
+                <option value="Chapter 12 - Atoms">Chapter 12 - Atoms</option>
+                <option value="Chapter 13 - Nuclei">Chapter 13 - Nuclei</option>
+                <option value="Chapter 14 - Semiconductor Electronics">Chapter 14 - Semiconductor Electronics</option>
+                <option value="Chapter 15 - Communication Systems">Chapter 15 - Communication Systems</option>
+            </select>
+        </div>
 
-    <div class="container-fluid">
-        <div id="owl-demo" class="owl-carousel owl-theme owl-loaded">
+
+        <div class="container-fluid">
+            <div class="owl-carousel owl-loaded owl-drag owl-theme">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" id="owl-demo">
+
+                    </div>
+                </div>
+
+            </div>
 
         </div>
     </div>
@@ -248,9 +279,9 @@
                 <div class="row">
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Get In Touch</h5>
-                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>J-28, IInd Floor, west Patel nagar, New Delhi, India
+                            - 110008 </p>
+                        <p><i class="fa fa-envelope mr-2"></i>naushadmath@gmail.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-square mr-2" href="#"><i
@@ -263,30 +294,25 @@
                     <div class="col-md-6 mb-5">
                         <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Our Courses</h5>
                         <div class="d-flex flex-column justify-content-start">
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Web Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Apps
-                                Design</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Marketing</a>
-                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Research</a>
-                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>SEO</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Video Lecture</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Textbook Solution
+                            </a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Sample Papers</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pratices
+                                Papers</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Ncert Solutions </a>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col-lg-5 col-md-12 mb-5">
-                <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor.
-                    Accu
-                    kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
-                <div class="w-100">
-                    <div class="input-group">
-                        <input type="text" class="form-control border-light" style="padding: 30px;"
-                            placeholder="Your Email Address">
-                        <div class="input-group-append">
-                            <button class="btn btn-primary px-4">Sign Up</button>
-                        </div>
-                    </div>
-                </div>
+                <!-- <h5 class="text-primary text-uppercase mb-4" style="letter-spacing: 5px;">Newsletter</h5> -->
+                <p>
+                    our Mission is to provide free eduction to children all over India.
+                    <br>
+                    It's 100% free & always.
+                </p>
+
             </div>
         </div>
     </div>
@@ -295,7 +321,7 @@
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
                 <p class="m-0 text-white">&copy; <a href="#">Domain Name</a>. All Rights Reserved. Designed by <a
-                        href="https://htmlcodex.com">HTML Codex</a>
+                        href="#">Akshat Goyal</a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
@@ -305,12 +331,6 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-white py-0" href="#">Terms</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">FAQs</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Help</a>
                     </li>
                 </ul>
             </div>
@@ -325,52 +345,98 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <!-- Include Owl Carousel JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <!-- Initialize Owl Carousel -->
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script>
         $(document).ready(function () {
-            var videoUrls = [
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe",
-                "https://www.youtube.com/embed/UO1iOBkIq3k?si=PA7BinykVcujSANe"
-            ];
-
             var owl = $("#owl-demo");
+            var videoData = {
+                "Chapter 1 - Electric Charges and Fields": [
+                    "https://www.youtube.com/embed/aa-OcVBFcMA?si=IkpanemklSXuR8ka",
+                    "https://www.youtube.com/embed/bAFBim8i94k?si=Bb9upW6piiU98PP5"
+                ],
+                "Chapter 2 - Electrostatic Potential and Capacitance": [
+                    "https://www.youtube.com/embed/_miJMZiIKvs?si=YdONntKhOOwYC9RF",
+                    "https://www.youtube.com/embed/DNJu8Yzvzc8?si=2PC2AdJIDTBQWCGq",
+                    "https://www.youtube.com/embed/UvXoZgujQhQ?si=MlzM3C1evf9J-NFV",
+                    "https://www.youtube.com/embed/_ss9rJCj7i4?si=67AfN4H702SkfWbn"
+                ],
+                "Chapter 3 - Current Electricity": [
+                    "https://www.youtube.com/embed/Xwy4NpU3GjQ?si=zrmfHr7y3PQo5XB7",
+                    "https://www.youtube.com/embed/LxHakks6BAY?si=9VfGl79EtsPcc8hd"
+                ],
+                "Chapter 4 - Moving Charges and Magnetism": [
+                    "https://www.youtube.com/embed/OTEjWX04NY8?si=9wyG8QgSrDI32uQc",
+                    "https://www.youtube.com/embed/xi6LxIMmLdM?si=-UNLAgZ9T3ZImxNZ",
+                    "https://www.youtube.com/embed/VUzm2IPf_tE?si=7ZHcsO8CYrtKyOJt",
+                    "https://www.youtube.com/embed/BSOl0gL8M6M?si=Cjw7UlgZFmAAr1Uy"
+                ],
+                "Chapter 5 - Magnetism and Matter": [
+                    "https://www.youtube.com/embed/Q8Ck6nW7f8c?si=DCAPHsLwVPUrezOJ",
+                    "https://www.youtube.com/embed/D42xZDiMvXI?si=8doWBh2iIsYkfPJR"
+                ],
+                "Chapter 6 - Electromagnetic Induction": [
+                    "https://www.youtube.com/embed/yhI15jT76v4?si=v6U76ZHLIt6fIPQa",
+                    "https://www.youtube.com/embed/atbKXL-G09c?si=j5k-I7YD5rBSdUDW"
+                ],
+                "Chapter 7 - Alternating Current": [
+                    "https://www.youtube.com/embed/4NojF3A71BM?si=o1wAMuS5OO3Mz9MA",
+                    "https://www.youtube.com/embed/dlPzxG37CI4?si=5iQBaVw8DVLz6W0j",
+                    "https://www.youtube.com/embed/yP9Hc19H5iY?si=K6WT_3JS4oI2hbgv"
+                ],
+                "Chapter 8 - Electromagnetic Waves": [
+                    "https://www.youtube.com/embed/ztgNKDbf7dc?si=sUoQSh7_SNd4jH1T",
+                    "https://www.youtube.com/embed/ROOHmSmc3eQ?si=EBlHq0oPHZ0__Bsz"
+                ],
+                "Chapter 9 - Ray Optics and Optical Instruments": [
+                    "https://www.youtube.com/embed/tHOPdqzBCag?si=2W05kmi1TWn4yx8Q",
+                    "https://www.youtube.com/embed/TZg59tPVgDc?si=0tsS7wBcDByF0J1Q",
+                    "https://www.youtube.com/embed/dArR6dKhW_E?si=e4CnROeZMYSubGVi",
+                    "https://www.youtube.com/embed/X51pfEUM98M?si=Rv_U2NcY1eyszs6x"
+                ],
+                "Chapter 10 - Wave Optics": [
+                    "https://www.youtube.com/embed/HAS58tZHmSw?si=czxNjwEC5-71SOyi",
+                    "https://www.youtube.com/embed/aS9srW_sUKU?si=mT9hNK00UCDzy6cz",
+                    "https://www.youtube.com/embed/QRexoN88YzQ?si=Oyu22Zy9gdj2IcuC",
+                    "https://www.youtube.com/embed/AsOhDAeazY8?si=g7MMTzYkAJE4kMIN"
+                ],
+                "Chapter 11 - Dual Nature of Radiation and Matter": [
+                    "https://www.youtube.com/embed/7AeJlBzwjzY?si=wE7fy1KkdMKKcomT",
+                    "https://www.youtube.com/embed/TD6j6NttfsQ?si=ecXfTIOIC9-vvqMP"
+                ],
+                "Chapter 12 - Atoms": [
+                    "https://www.youtube.com/embed/RTyhHmWulrA?si=gmE5T0PJXC_VONsj",
+                    "https://www.youtube.com/embed/7-ChUMh3i8A?si=Og_tsGK57cqsMS2A"
+                ],
+                "Chapter 13 - Nuclei": [
+                    "https://www.youtube.com/embed/nGY9p4fUA9w?si=Z96zxBLzesisrRdO",
+                    "https://www.youtube.com/embed/paZyububadc?si=i3IX5OzLbJ-LtQ7U"
+                ],
+                "Chapter 14 - Semiconductor Electronics": [
+                    "https://www.youtube.com/embed/L9BeJesbCI0?si=qcV4cLnM6uuoP626",
+                    "https://www.youtube.com/embed/eDMZOBVXesI?si=EDauEkcPiEcQdAlc",
+                    "https://www.youtube.com/embed/eE7Z-NUJutI?si=vh30mtAIz0utlv8n",
+                    "https://www.youtube.com/embed/5KpSO92JYC8?si=DbiveXKx-u7imsJH"
+                ],
+                "Chapter 15 - Communication Systems": [
+                    "https://www.youtube.com/embed/8rza6gyICJ8?si=Rp00bkgjBOLNkAYw",
+                    "https://www.youtube.com/embed/6KdAteKAijg?si=fbqBvB-FpRbXJ2HQ"
+                ],
+            };
 
-            // Loop through videoUrls and create carousel items
-            for (var i = 0; i < videoUrls.length; i++) {
-                var item = $("<div>").addClass("item");
-                var container = $("<div>").addClass("embedder");
-                var iframe = $("<iframe>").attr("width", "400").attr("height", "200").attr("src", videoUrls[i]).attr("frameborder", "0")
-                    .attr("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
-                    .attr("allowfullscreen", "");
-
-                container.append(iframe);
-                item.append(container);
-
-                owl.append(item);
-            }
-
-            // Initialize Owl Carousel after adding items
+            // Initialize Owl Carousel
             owl.owlCarousel({
                 nav: true,
                 touchDrag: true,
@@ -389,12 +455,65 @@
                         nav: true,
                     },
                     1000: {
-                        items: 4,
+                        items: 2,
                         nav: true,
-
                     }
                 }
             });
+
+            // Function to update the carousel based on the selected chapter
+            function updateCarousel(chapter) {
+                owl.trigger('destroy.owl.carousel'); // Remove current carousel
+                owl.empty(); // Clear existing items
+
+                // Loop through videoData for the selected chapter and create carousel items
+                var videoUrls = videoData[chapter];
+                for (var i = 0; i < videoUrls.length; i++) {
+                    var item = $("<div>").addClass("item");
+                    var container = $("<div>").addClass("embedder");
+                    var iframe = $("<iframe>").attr("width", "400").attr("height", "400").attr("src", videoUrls[i]).attr("frameborder", "0")
+                        .attr("allow", "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share")
+                        .attr("allowfullscreen", "");
+
+                    container.append(iframe);
+                    item.append(container);
+                    owl.append(item);
+                }
+
+                // Initialize Owl Carousel again
+                owl.owlCarousel({
+                    nav: true,
+                    touchDrag: true,
+                    stagePadding: 15,
+                    loop: true,
+                    video: true,
+                    responsiveClass: true,
+                    items: 4,
+                    responsive: {
+                        0: {
+                            items: 1,
+                            nav: true,
+                        },
+                        600: {
+                            items: 2,
+                            nav: true,
+                        },
+                        1000: {
+                            items: 2,
+                            nav: true,
+                        }
+                    }
+                });
+            }
+
+            // Handle dropdown change event
+            $("#chapterDropdown").change(function () {
+                var selectedChapter = $(this).val();
+                updateCarousel(selectedChapter);
+            });
+
+            // Initialize carousel with the default selected chapter
+            updateCarousel($("#chapterDropdown").val());
         });
     </script>
 </body>
