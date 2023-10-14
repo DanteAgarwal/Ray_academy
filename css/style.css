@@ -10369,5 +10369,7 @@ h6,
 }
 
 .topnav_bg {
-  background: #b1aaaa;
+  background: transparent linear-gradient(90deg, #6910a8 0, #cb5df1 100%) 0 0
+    no-repeat padding-box;
+  background-size: cover;
 }

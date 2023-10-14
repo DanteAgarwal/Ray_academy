@@ -23,6 +23,104 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        .list-wrap,
+        .list-wrap .ul-3 {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        .pad30 {
+            padding: 30px 0;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .list-wrap .ul-3 {
+            flex-wrap: wrap;
+            margin-right: auto;
+        }
+
+        .list-wrap .ul-3 .li-3 {
+            background: #fff;
+            border: 1px solid #fff;
+            box-shadow: 0 3px 10px #00000029;
+            width: 338px;
+            color: #3e3e3e;
+            display: flex;
+            align-items: center;
+            border-radius: 16px;
+            font: normal 400 16px/20px 'Open Sans', sans-serif;
+            position: relative;
+            margin: 0 10px 20px 0;
+            height: 79px;
+        }
+
+        .ul-3 {
+            list-style: none;
+        }
+
+        .list-wrap .ul-3,
+        .li-3,
+        .a-4 {
+            color: #3e3e3e;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        .list-wrap .ul-3 .li-3 .a-4,
+        span {
+            padding-right: 10px;
+        }
+
+        .bg-blue-arrow {
+            width: 23px;
+            height: 23px;
+            border-radius: 50%;
+            background: transparent linear-gradient(180deg, #ebc034 0, #eb7134 100%) 0 0 no-repeat padding-box;
+            box-shadow: 0 2px 3px #00000029;
+            border: 1px solid #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .bg-gray {
+            background: transparent linear-gradient(130deg, #6910a8 0, #cb5df1 100%) 0 0 no-repeat padding-box;
+        }
+
+        .bg-gra {
+            background: #e4e4e4;
+        }
+
+        .max-container {
+            max-width: 1150px;
+            margin: 0 auto;
+        }
+
+        .container-gx {
+            display: flex;
+            justify-content: space-between;
+        }
+
+
+        .image {
+            width: 30%;
+            background: url('your-image.jpg') center/cover no-repeat;
+        }
+
+        p {
+            color: black;
+            font: times new roman;
+        }
+    </style>
 
     <style>
         .dropdown-menu {
@@ -252,11 +350,11 @@
                                     <li class="dropdown-submenu">
                                         <a href="#" class="dropdown-item">RS Aggarwal &raquo;</a>
                                         <ul class="dropdown-menu submenu">
-                                            <li><a href="boards/cbse/TSgrewal/11_chapterlist.html"
+                                            <li><a href="boards/cbse/RSagarwal/10_chapter_solution.html"
                                                     class="dropdown-item">Class 10</a></li>
-                                            <li><a href="boards/cbse/TSgrewal/11_chapterlist.html"
+                                            <li><a href="boards/cbse/RSagarwal/9_chapter_solution.html"
                                                     class="dropdown-item">Class 9</a></li>
-                                            <li><a href="boards/cbse/TSgrewal/11_chapterlist.html"
+                                            <li><a href="boards/cbse/RSagarwal/8_chapter_solution.html"
                                                     class="dropdown-item">Class 8</a></li>
                                             <li><a href="boards/cbse/RSagarwal/7_chapter_solution.html"
                                                     class="dropdown-item">Class 7</a></li>
@@ -277,18 +375,6 @@
                                             class="dropdown-item">PS Verma</a></li>
                                 </ul>
                             </div>
-                            <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">NCERT Solutions</a>
-                                <div class="dropdown-menu rounded-0 m-0">
-                                    <a href="" class="dropdown-item">12th All NCERT Books</a>
-                                    <a href="" class="dropdown-item">11th All NCERT Books</a>
-                                    <a href="" class="dropdown-item">10th All NCERT Books</a>
-                                    <a href="" class="dropdown-item">9th All NCERT Books</a>
-                                    <a href="" class="dropdown-item">8th All NCERT Books</a>
-                                    <a href="" class="dropdown-item">7th All NCERT Books</a>
-                                    <a href="" class="dropdown-item">6th All NCERT Books</a>
-                                </div>
-                            </div>
                             <a href="contact.html" class="nav-item nav-link">Contact</a>
                         </div>
                         <a class="btn btn-primary py-2 px-4 ml-auto d-none d-lg-block"
@@ -301,7 +387,7 @@
     <!-- Navbar End -->
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5 mb-5">
+    <div class="container-fluid p-0">
         <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#header-carousel" data-slide-to="0" class="active"></li>
@@ -316,8 +402,7 @@
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
                             <h1 class="display-3 text-white mb-md-4">Best Education From Your Home</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn
-                                More</a>
+                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">100% Free</a>
                         </div>
                     </div>
                 </div>
@@ -328,8 +413,7 @@
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
                             <h1 class="display-3 text-white mb-md-4">Best Online Learning Platform</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn
-                                More</a>
+                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">100% Free</a>
                         </div>
                     </div>
                 </div>
@@ -340,8 +424,7 @@
                         <div class="p-5" style="width: 100%; max-width: 900px;">
                             <h5 class="text-white text-uppercase mb-md-3">Best Online Courses</h5>
                             <h1 class="display-3 text-white mb-md-4">New Way To Learn From Home</h1>
-                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">Learn
-                                More</a>
+                            <a href="" class="btn btn-primary py-md-2 px-md-4 font-weight-semi-bold mt-2">100% Free</a>
                         </div>
                     </div>
                 </div>
@@ -350,82 +433,141 @@
     </div>
     <!-- Carousel End -->
 
-    <!-- Team Start -->
-    <div class="container-fluid py-5">
-        <div class="container pt-5 pb-3">
+
+    <div class="container">
+        <div class="container-fluid py-5">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Teachers</h5>
-                <h1>Meet Our Teachers</h1>
-            </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <div style="width: 260px; height:210px;background:rgba(243, 221, 95, 0.454); ">
-                                <div style="font-size:40px;font-style:bold;padding-top: 10px; padding-right: 10px; ">
-                                    <p>RD Sharma</p>
-                                    <p>Vol 1 & 2</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="bg-secondary p-4">
-                            <h4><a href="" style="padding-right: 20px;">RD Sharma</a></h4>
-                            <i class="fa fa-chevron-circle-right text-primary fa-lg"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <div style="width: 260px; height:210px;background:red; "></div>
-                            <div class="team-social">
-                                <a class="btn btn-outline-light mx-1" href="#">
-                                    <h4>RD Sharma</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-secondary p-4">
-                            <h4><a href="" style="padding-right: 20px;">RD Sharma</a></h4>
-                            <i class="fa fa-chevron-circle-right text-primary fa-lg"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <div style="width: 260px; height:210px;background:red; "></div>
-                            <div class="team-social">
-                                <a class="btn btn-outline-light mx-1" href="#">
-                                    <h4>RD Sharma</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-secondary p-4">
-                            <h4><a href="" style="padding-right: 20px;">RD Sharma</a></h4>
-                            <i class="fa fa-chevron-circle-right text-primary fa-lg"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center team mb-4">
-                    <div class="team-item rounded overflow-hidden mb-2">
-                        <div class="team-img position-relative">
-                            <div style="width: 260px; height:210px; background:red; "></div>
-                            <div class="team-social">
-                                <a class="btn btn-outline-light mx-1" href="#">
-                                    <h4>RD Sharma</h4>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="bg-secondary p-4">
-                            <h4><a href="" style="padding-right: 20px;">RD Sharma</a></h4>
-                            <i class="fa fa-chevron-circle-right text-primary fa-lg"></i>
-                        </div>
-                    </div>
-                </div>
+                <h1 style="color:#ff7722">Our Study Material</h1>
             </div>
         </div>
+        <div class="container-gx">
+            <div class="bg-gra pad30">
+                <div class="max-container">
+                    <ul style="color:black;">
+                        <li>
+                            <div class="h3" style="color:rgb(117, 117, 222)">Choose the Chapter</div>
+                        </li>
+                    </ul>
+
+                    <div class="list-wrap pad30">
+                        <ul class="ul-3">
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-12/course12.html"><span>Class
+                                        XII</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-11/course11.html"><span>Class
+                                        XI</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-10/course10.html"><span>Class
+                                        X</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-9/course9.html"><span>Class
+                                        IX</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-8/course8.html"><span>Class
+                                        VIII</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-7/course7.html"><span>Class
+                                        VII</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href="boards/cbse/class-6/course6.html"><span>Class
+                                        VI</span> <i class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24"
+                                            width="24px" fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="image">
+                <!-- Insert your image here -->
+                <img src="img/about.jpg" alt="Your Image" style="width:450px; height:600px">
+            </div>
+
+
+        </div>
     </div>
-    <!-- Team End -->
+    <br>
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="container-fluid py-5">
+            <div class="text-center mb-5">
+                <h1 style="color:#FF7722">English Speaking Courses</h1>
+            </div>
+        </div>
+        <div class="container-gx" style="text-align:center;">
+            <section class="bg-gray pad30">
+                <div class="max-container">
+                    <div class="list-wrap pad30">
+                        <ul class="ul-3">
+                            <li class="li-3"><a class="a-4" href=""><span>Basic Courses</span> <i
+                                        class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24" width="24px"
+                                            fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href=""><span>Intermediate Courses</span> <i
+                                        class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24" width="24px"
+                                            fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                            <li class="li-3"><a class="a-4" href=""><span>Advance Courses</span> <i
+                                        class="bg-blue-arrow"><svg height="24px" viewBox="0 0 24 24" width="24px"
+                                            fill="#fff">
+                                            <path d="M0 0h24v24H0V0z" fill="none"></path>
+                                            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z">
+                                            </path>
+                                        </svg></i></a></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <div class="image">
+                <!-- Insert your image here -->
+                <img src="img/blog-2.jpg" alt="Your Image" style="width:440px; height:400px">
+            </div>
+
+
+        </div>
+    </div>
+
+
 
     <!-- Testimonial Start -->
     <div class="container-fluid py-5">
@@ -481,17 +623,16 @@
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <div class="text-center mb-5">
-                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Our Blog</h5>
-                <h1>Latest From Our Blog</h1>
+                <h5 class="text-primary text-uppercase mb-3" style="letter-spacing: 5px;">Our Motto</h5>
+                <h1>Free Education for Anyone</h1>
             </div>
             <div class="row pb-3">
                 <div class="col-lg-4 mb-4">
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-1.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut
-                                clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
+                            <h5 class="text-white mb-3">Discover many Online Study Materials avaible, especially for
+                                class 6 to 12 students.<br> its 100% Free.</h5>
                         </a>
                     </div>
                 </div>
@@ -499,9 +640,8 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-2.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut
-                                clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
+                            <h5 class="text-white mb-3">Explore the update board exam Study materials from India's
+                                Leading Online Learning Platform. <br> It's 100% Free. </h5>
                         </a>
                     </div>
                 </div>
@@ -509,9 +649,8 @@
                     <div class="blog-item position-relative overflow-hidden rounded mb-2">
                         <img class="img-fluid" src="img/blog-3.jpg" alt="">
                         <a class="blog-overlay text-decoration-none" href="">
-                            <h5 class="text-white mb-3">Lorem elitr magna stet eirmod labore amet labore clita at ut
-                                clita</h5>
-                            <p class="text-primary m-0">Jan 01, 2050</p>
+                            <h5 class="text-white mb-3">RayAcademy Offers all major Subject and serves schools as a
+                                one-stop Destination for learning. </h5>
                         </a>
                     </div>
                 </div>
@@ -576,12 +715,143 @@
             <div class="col-lg-6 text-center text-md-right">
                 <ul class="nav d-inline-flex">
                     <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                        <a class="nav-link text-white py-0" href="#" data-toggle="modal"
+                            data-target="#privacyModal">Privacy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                        <a class="nav-link text-white py-0" href="#" data-toggle="modal"
+                            data-target="#termsModal">Terms</a>
                     </li>
                 </ul>
+            </div>
+            2
+            <!-- Privacy Modal -->
+            <div class="modal fade" id="privacyModal" tabindex="-1" role="dialog" aria-labelledby="privacyModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="privacyModalLabel">Privacy Policy</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Privacy Policy Content -->
+                            <h2>Privacy Policy</h2>
+                            <p>We are committed to respecting your privacy. This Privacy Policy explains how we collect,
+                                use, and protect your personal information. By using our website, you consent to the
+                                practices described in this Privacy Policy.</p>
+                            <p>Please review the following important points:</p>
+                            <ol style="color:black; font:times new roman;">
+                                <li>Acceptance of Terms: By using this website, you agree to comply with and be bound by
+                                    these terms.</li>
+                                <li>Website Content: The content on this website, including text, images, and
+                                    multimedia, is provided for educational purposes and may not be reproduced without
+                                    permission.</li>
+                                <li>Donations: All donations made through this website are subject to our donation terms
+                                    and policies.</li>
+                                <li>User Conduct: Users must not engage in any activity that disrupts the website's
+                                    functionality or violates applicable laws and regulations.</li>
+                                <li>Intellectual Property: All content on this website is the property of the
+                                    educational NGO and may not be used without explicit permission.</li>
+                                <li>External Links: We provide links to external websites for informational purposes. We
+                                    are not responsible for the content or privacy practices of these sites.</li>
+                                <li>Disclaimer: The information on this website is provided as is and without
+                                    warranties. We do not guarantee the accuracy or completeness of the content.</li>
+                                <li>Cookies: We use cookies to enhance user experience. By using this website, you
+                                    consent to our use of cookies as described in our Cookie Policy.</li>
+                                <li>Accessibility: We are committed to ensuring that our website is accessible to all
+                                    users. Please contact us if you encounter accessibility issues.</li>
+                                <li>Termination: We reserve the right to terminate or suspend access to the website at
+                                    our discretion.</li>
+                                <li>Updates: These terms may be updated from time to time, and the latest version will
+                                    be posted on the website.</li>
+                                <li>Contact Information: If you have questions or concerns about these terms, please
+                                    contact us through the provided contact information.</li>
+                            </ol>
+                            <p>Please note that these are sample terms and should be customized to fit the specific
+                                needs and policies of your educational NGO. It's also recommended to seek legal advice
+                                when drafting terms and conditions for your website.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Agree</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Terms Modal -->
+            <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="termsModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-scrollable" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="termsModalLabel">Terms of Service</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <h1>Conditions of Use</h1>
+                            <p>Please read these terms and conditions carefully before using <a
+                                    href="/">www.rayacademy.live</a> ("this
+                                Website"). By accessing or using the Website, you agree to be bound by these conditions.
+                                If you do not agree to these conditions, please do not use the Website.</p>
+
+                            <h2>1. Acceptance of Terms</h2>
+                            <p>By accessing or using the Website, you agree to comply with and be bound by these
+                                conditions. If you disagree with any part of these terms, you are not authorized to use
+                                the Website.</p>
+
+                            <h2>2. User Registration</h2>
+                            <p>a. Some areas of the Website may require user registration. You agree to provide
+                                accurate, current, and complete information during the registration process and to
+                                update such information to keep it accurate, current, and complete.</p>
+                            <p>b. You are responsible for maintaining the confidentiality of your account and password.
+                                You accept responsibility for all activities that occur under your account.</p>
+
+                            <h2>3. Use of Content</h2>
+                            <p>a. The content provided on this Website, including but not limited to text, images,
+                                videos, and other materials, is for educational and informational purposes only.</p>
+                            <p>b. You may not reproduce, distribute, modify, transmit, or otherwise use the content for
+                                any commercial or non-educational purposes without our prior written consent.</p>
+
+                            <h2>4. User Conduct</h2>
+                            <p>a. You agree not to use the Website in a way that could harm or impair the Website's
+                                functionality, security, or accessibility.</p>
+                            <p>b. You must not engage in any unlawful or harmful activity while using the Website.</p>
+
+                            <h2>5. Privacy</h2>
+                            <p>We respect your privacy. Our Privacy Policy explains how we collect, use, and protect
+                                your personal information. By using the Website, you consent to the practices described
+                                in our Privacy Policy.</p>
+
+                            <h2>6. Disclaimer</h2>
+                            <p>a. The Website provides educational content, but we make no warranties or guarantees
+                                regarding the accuracy, completeness, or reliability of this content. Use it at your own
+                                discretion.</p>
+                            <p>b. The Website may contain links to third-party websites for additional resources. We are
+                                not responsible for the content or practices of these external sites.</p>
+
+                            <h2>7. Termination</h2>
+                            <p>We reserve the right to terminate your access to the Website for any reason, including
+                                violating these terms, at our discretion.</p>
+
+                            <h2>8. Changes in conditions</h2>
+                            <p>We may revise and update these conditions at any time. Your continued use of the Website
+                                signifies your acceptance of these changes.</p>
+
+                            <h2>9. Contact Information</h2>
+                            <p>If you have any questions or concerns about these terms, please contact us at <a
+                                    href="mailto:info@rayacademy.live">info@rayacademy.live</a>.</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Agree</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
